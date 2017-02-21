@@ -1,0 +1,22 @@
+$(document).ready(function(){
+    $("button").click(function(){
+        $("p").hide();
+    });
+});
+
+
+
+
+
+function startGame() {
+
+	//generate new million total •	random number generated shown (between 19 - 120
+		$('#pressNew').on('click',function() {
+
+       	million = Math.floor(Math.random() * 120) + 19; 
+       	$("#millions").text( million);
+
+       	blueWorth = Math.floor(Math.random() * 6) + 1;  
+		whiteWorth = Math.floor(Math.random() * 6) + 1; 
+		purpleWorth = Math.floor(Math.random() * 6) + 1; 
+		pinkWorth = Math.floor(Math.random() * 6) + 1; 

@@ -46,8 +46,7 @@ background: url(assets/images/subtle_orange_emboss_@2X.png);
 </style>
 
 	<div class="container">
-			<div class="jumbotron" style="background-color: white">
-			<h1 class="pull-righty"></h1>
+			<div class="jumbotron" style="background-color: white; padding:0px;">
 			  <h1 class="pull-right">the <strong>Crystal collector</strong></h1>
 			 </div>
    </div>
@@ -58,9 +57,13 @@ background: url(assets/images/subtle_orange_emboss_@2X.png);
  <div class="container">
 
 <div class="row">
-	<div class="col-sm-6 well col-lg-7" style="margin-top: 20px"><strong>WINS:</strong> wins here || <strong> LOSSES:</strong>losses here</div>
+	<div class="col-sm-6 well col-lg-7" style="margin-top: 20px"><strong>WINS:</strong> wins here <h4>.</h4>|| <strong> LOSSES:</strong>losses here <h4>.</h4></div>
 
 							      <img src="assets/images/inspector.jpg" class="pull-right" style="margin-top: 20px; height: 700px" alt="...">
+
+<br>
+		          	
+
 
 		<div class="col-sm-6 col-lg-7" style="padding:10px">
 		
@@ -75,7 +78,7 @@ background: url(assets/images/subtle_orange_emboss_@2X.png);
 		<br>
 		<br>
 		<br>
- 		  <h2 class="pull-left">Your total: ____ </h2>
+ 		  <h2 class="pull-left" id="yourTotal">Your total: &nbsp; <h2 id="blankHere">____ </h2></h2>
 		<div class="col-sm-6 col-lg-12" style="padding:10px">
 		
 		
@@ -84,21 +87,19 @@ background: url(assets/images/subtle_orange_emboss_@2X.png);
 		<div class="row">
 				<div class="panelBody col-lg-12 pull-center" style="padding:10px; background-color: #444">
 		          <ul class="list-inline ">
-		            <li><a href="https://github.com/LeslieMoses"><img src="assets/images/aqua.jpg" height="100px"></a></li>
+		            <li><button id="blueBtn"><img src="assets/images/aqua.jpg" height="100px"></button></li>
 		              
-		            <li><a href="https://twitter.com/LeslieAMoses"><img src="assets/images/white.jpg" height="100px"></a></li>
+		            <li><button id="whiteBtn"><img src="assets/images/white.jpg" height="100px"></button></li>
 
-		            <li><a href="https://www.linkedin.com/in/leslie-moses-045b2b88"><img src="assets/images/purple.jpg" height="100px"></a></li>
+		            <li><button id="purpleBtn"><img src="assets/images/purple.jpg" height="100px"></button></li>
 
 <!--##WILL THIS WORK?<button type="button" class="signout_btn" id="btnSignOut">Sign Out</button>-->
-		            <li><a href="https://www.linkedin.com/in/leslie-moses-045b2b88"><img src="assets/images/pink.jpg" height="100px"></a></li>
+		            <li><button id="pinkBtn"><img src="assets/images/pink.jpg" height="100px"></button></li>
 		          </ul>
 		 </div></div>
- 				<br>
-		          	<p><a id="pressNew" class="btn btn-default btn-lg pull-right"   href="#" role="button" >Press for new game</a>  </p>
-
-		
+ 						
 		<br>
+		<p><a id="pressNew" class="btn btn-default btn-lg pull-right"   href="#" role="button" >Press for new game</a>  </p>
 
 		<div class="row col-lg-12 pull-right">		
 
