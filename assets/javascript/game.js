@@ -25,6 +25,13 @@ $(document).ready(function(){
 		var newGame = 0;
 
 
+$(document).ready(function(){
+    $("#pressNew").click(function(){
+    		million = Math.floor(Math.random() * 120) + 19; 
+        $("#millions").text("$" + million +" million");
+    });
+});
+
 //game start
 function startGame() {
 
@@ -32,7 +39,7 @@ function startGame() {
 		$('#pressNew').on('click',function() {
 
        	million = Math.floor(Math.random() * 120) + 19; 
-       	$('#millions').text( million);
+       	$("#millions").text( million);
 
        	blueWorth = Math.floor(Math.random() * 6) + 1;  
 		whiteWorth = Math.floor(Math.random() * 6) + 1; 
