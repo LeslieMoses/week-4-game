@@ -8,11 +8,14 @@
 	 <!-- Added a link to Bootstrap-->
     <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/css/bootstrap.min.css" integrity="sha384-1q8mTJOASx8j1Au+a5WDVnPi2lkFfwwEAa8hDDdjZlpLegxhjVME1fgjWPGmkzs7" crossorigin="anonymous">
     <!-- Added link to the jQuery Library -->
-    <script src="https://code.jquery.com/jquery-3.1.1.js"></script>
+    <script type="text/javascript" src="https://code.jquery.com/jquery-3.1.1.js"></script>
+    <script src="assets/javascript/game.js"></script>
+
    <!--Goog FONT -->
 <link href="https://fonts.googleapis.com/css?family=Barrio|Open+Sans|Share+Tech+Mono" rel="stylesheet">
 </head>
 <body>
+
 
 
 <style>
@@ -66,7 +69,7 @@ background: url(assets/images/subtle_orange_emboss_@2X.png);
 
 		<div class="well col-sm-6 col-lg-7 ">
 		 <p id="mono"> Current crystal collection worth:: </p> 
-		 <h1 class="pull-right">$____ million</h1>
+		 <h1 class="pull-right">$</h1><h2 id="millions" class="pull-right">in millions</h2>
 		  <br>
 		<br>
 		<br>
@@ -87,12 +90,12 @@ background: url(assets/images/subtle_orange_emboss_@2X.png);
 
 		            <li><a href="https://www.linkedin.com/in/leslie-moses-045b2b88"><img src="assets/images/purple.jpg" height="100px"></a></li>
 
-
+<!--##WILL THIS WORK?<button type="button" class="signout_btn" id="btnSignOut">Sign Out</button>-->
 		            <li><a href="https://www.linkedin.com/in/leslie-moses-045b2b88"><img src="assets/images/pink.jpg" height="100px"></a></li>
 		          </ul>
 		 </div></div>
  				<br>
-		          	<p><a class="btn btn-default btn-lg pull-right"   href="#" role="button" >Press for new game</a>  </p>
+		          	<p><a id="pressNew" class="btn btn-default btn-lg pull-right"   href="#" role="button" >Press for new game</a>  </p>
 
 		
 		<br>
