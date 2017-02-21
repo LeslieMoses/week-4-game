@@ -25,7 +25,7 @@ $(document).ready(function(){
 		var newGame = 0;
 
 
-$(document).ready(function(){
+ 
     
 //game start
     $("#pressNew").click(function(){
@@ -46,14 +46,34 @@ $(document).ready(function(){
 
     
      	$("#blueBtn").click(function(){
-         $("#blankHere").text( blueWorth + combinedWorth); 
+     		
+         $("#blankHere").text( blueWorth + combinedWorth ); 
+
+     });
+
+          $("#whiteBtn").click(function(){
+         $("#blankHere").text( whiteWorth + combinedWorth); 
+
+          });
+
+         $("#purpleBtn").click(function(){
+         $("#blankHere").text( purpleWorth + combinedWorth); 
+
+          });
+
+         $("#pinkBtn").click(function(){
+         $("#blankHere").text( pinkWorth + combinedWorth); 
+
+          });
+
+        
 
 });
 
+ 
 
+		0
 
-		
-})
 	//generate new value to Crystals' worth
 		
 		 
@@ -64,7 +84,7 @@ $(document).ready(function(){
 
 	
 //function startGame end
-} )//
+ 
 
 
 //function randomIntFromInterval(min,max)
