@@ -11,7 +11,9 @@ $(document).ready(function(){
 
 
 		//crystals' worth combined
-		var combinedWorth = 0;
+		//HERE HERE HERE H
+		var combinedWorth = combinedWorth + blueWorth + purpleWorth;
+
 
 		//##add click to each crystal
 		//Crystals' worth •	Each crystal should have random hidden value (between 1 - 12)
@@ -21,12 +23,12 @@ $(document).ready(function(){
 		var purpleWorth = 0;
 		var pinkWorth = 0;
 		 
+		//var blueWorthClicked = blueWorth
+
 		//Restart
 		var newGame = 0;
 
 
- 
-    
 //game start
     $("#pressNew").click(function(){
     		
@@ -34,46 +36,56 @@ $(document).ready(function(){
     		million = Math.floor(Math.random() * 120) + 19; 
         $("#millions").text("$" + million +" million");
 	 	$("#blankHere").empty();
-	       	  combinedWorth = 0;
+	       	  
 
 		blueWorth = Math.floor(Math.random() * 12) + 1; 
 		whiteWorth = Math.floor(Math.random() * 12) + 1; 
 		purpleWorth = Math.floor(Math.random() * 12) + 1; 
 		pinkWorth = Math.floor(Math.random() * 12) + 1; 
-      
 
+
+var gemCount =0;
+		
+	$(".gem").click(function() {
+			this.value++;
+					$("#blankHere").html(gemCount * blueWorth);
+    
     });
 
+
+
+var blueCount =0;
+		
+	$("#blueBtn").click(function() {
+			blueCount++;
+					$("#blankHere").html(blueCount * blueWorth);
     
-     	$("#blueBtn").click(function(){
-     		
-         $("#blankHere").text( blueWorth + combinedWorth ); 
+    });
+    
 
-     });
+//var whiteCount =0;
 
-          $("#whiteBtn").click(function(){
-         $("#blankHere").text( whiteWorth + combinedWorth); 
+//		$("#whiteBtn").click(function() {
+//			whiteCount++;
+//			$("#blankHere").html(whiteCount * whiteWorth);
 
-          });
 
-         $("#purpleBtn").click(function(){
-         $("#blankHere").text( purpleWorth + combinedWorth); 
+          
 
-          });
+  //  });
 
-         $("#pinkBtn").click(function(){
-         $("#blankHere").text( pinkWorth + combinedWorth); 
 
-          });
-
+		
         
+
+});
+
 
 });
 
  
 
-		0
-
+	 
 	//generate new value to Crystals' worth
 		
 		 
