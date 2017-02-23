@@ -17,7 +17,7 @@
 </head>
 <body>
 
-
+<!--background: url(gplaypattern_@2X.png);-->
 
 <style>
 .well {
@@ -25,13 +25,21 @@ background: white;
 }
 
 #mono {
-	font-size: 30px;
+	font-size: 26px;
 	font-family: 'Share Tech Mono', monospace;
-	letter-spacing: .2em;
+	letter-spacing: .1em;
 }
 
 body { 
-background: url(assets/images/subtle_orange_emboss_@2X.png);
+ 
+background: url(assets/images/lined_paper_@2X.png);
+}
+
+#winsL {
+	outline: 3px solid black;
+	font-family: 'Share Tech Mono', monospace;
+	font-size: 20px;
+	color: black;
 }
 
 .jumbotron h1 {
@@ -42,6 +50,14 @@ background: url(assets/images/subtle_orange_emboss_@2X.png);
 .pull-righty {
 	font-size: 30px;
     font-family: 'Barrio', cursive;
+}
+
+
+#pressNew{
+	font-size: 20px;
+	font-family: 'Share Tech Mono', monospace;
+	background-color: black;
+	color: white;
 }
 
 </style>
@@ -58,7 +74,7 @@ background: url(assets/images/subtle_orange_emboss_@2X.png);
  <div class="container">
 
 <div class="row">
-	<div class="col-sm-6 well col-lg-7" style="margin-top: 20px"><strong>WINS:</strong> wins here <h4>.</h4>|| <strong> LOSSES:</strong>losses here <h4>.</h4></div>
+	<div id="winsL" class="col-sm-6 well col-lg-7" style="margin-top: 20px"><h4><strong>WINS:</strong>  here  &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<strong> LOSSES:</strong> here </h4></div>
 
 							      <img src="assets/images/inspector.jpg" class="pull-right" style="margin-top: 20px; height: 700px" alt="...">
 
@@ -71,7 +87,7 @@ background: url(assets/images/subtle_orange_emboss_@2X.png);
 		</div>
 
 
-		<div class="well col-sm-6 col-lg-7 ">
+		<div class="well col-sm-6 col-lg-7 " >
 		 <p id="mono"> Current crystal collection worth:: </p> 
 		 <h1 class="pull-right" id="millions">$ million</h1>
 		  <br>
@@ -86,21 +102,21 @@ background: url(assets/images/subtle_orange_emboss_@2X.png);
 		<hr class="pull-center col-sm-12 col-lg-12">
 		<p id="mono"> <strong>Click to collect:: </strong> Add crystals' points, match total above + WIN</p></div>
 		<div class="row">
-				<div class="panelBody col-lg-12 pull-center" style="padding:10px; background-color: #444">
-		          <ul class="list-inline ">
-		            <li><button id="blueBtn" class="gem" value="blueValue"><img src="assets/images/aqua.jpg" height="100px"></button></li>
+				<div class="panelBody col-lg-12 pull-center" style="padding:10px; background-color: black">
+		          <ul class="list-inline " style="margin:0,auto">
+		            <li><button id="blueBtn" class="gem" value="blueValue" style="padding:0px;"><img src="assets/images/aqua.jpg" height="112.5px"></button></li>
 		              
-		            <li><button id="whiteBtn" class="gem" value="whiteValue"><img src="assets/images/white.jpg" height="100px"></button></li>
+		            <li><button id="whiteBtn" class="gem" value="whiteValue" style="padding:0px;"><img src="assets/images/white.jpg" height="112.5px"></button></li>
 
-		            <li><button id="purpleBtn" class="gem" value="purpleValue"><img src="assets/images/purple.jpg" height="100px"></button></li>
+		            <li><button id="purpleBtn" class="gem" value="purpleValue" style="padding:0px;"><img src="assets/images/purple.jpg" height="112.5px"></button></li>
 
 <!--##WILL THIS WORK?<button type="button" class="signout_btn" id="btnSignOut">Sign Out</button>-->
-		            <li><button id="pinkBtn" class="gem" value="pinkValue"><img src="assets/images/pink.jpg" height="100px"></button></li>
+		            <li><button id="pinkBtn" class="gem" value="pinkValue" style="padding:0px;"><img src="assets/images/pink.jpg" height="112.5px"></button></li>
 		          </ul>
 		 </div></div>
  						
 		<br>
-		<p><a id="pressNew" class="btn btn-default btn-lg pull-right"   href="#" role="button" >Press for new game</a>  </p>
+		<p><a id="pressNew" class="btn  btn-lg pull-right"   href="#" role="button" >New game</a>  </p>
 
 		<div class="row col-lg-12 pull-right">		
 
