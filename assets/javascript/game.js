@@ -12,7 +12,6 @@ $(document).ready(function(){
 
 		//crystals' worth combined
 		//HERE HERE HERE H
-		var combinedWorth = combinedWorth + blueWorth + purpleWorth;
 
 
 		//##add click to each crystal
@@ -22,66 +21,80 @@ $(document).ready(function(){
 		var whiteWorth = 0;
 		var purpleWorth = 0;
 		var pinkWorth = 0;
+
+
+		var blueCount = 0;
+		var whiteCount = 0;	
+		var pinkCount = 0;
+		var purpleCount = 0;
+
+		var combinedWorth = 0;
+
+		var combinedWorth = combinedWorth + blueWorth + purpleWorth + whiteWorth + pinkWorth;
 		 
 		//var blueWorthClicked = blueWorth
 
 		//Restart
-		var newGame = 0;
-
+	
 
 //game start
     $("#pressNew").click(function(){
     		
+	var newGame = 0;
 
-    		million = Math.floor(Math.random() * 120) + 19; 
+		
+    	million = Math.floor(Math.random() * 120) + 19; 
+        
         $("#millions").text("$" + million +" million");
 	 	$("#blankHere").empty();
 	       	  
 
-		blueWorth = Math.floor(Math.random() * 12) + 1; 
-		whiteWorth = Math.floor(Math.random() * 12) + 1; 
-		purpleWorth = Math.floor(Math.random() * 12) + 1; 
-		pinkWorth = Math.floor(Math.random() * 12) + 1; 
+	 	blueWorth = Math.floor(Math.random() * 6) + 1;  
+		whiteWorth = Math.floor(Math.random() * 6) + 1; 
+		purpleWorth = Math.floor(Math.random() * 6) + 1; 
+		pinkWorth = Math.floor(Math.random() * 6) + 1; 
 
+	$("#blankHere").html(combinedWorth= 0) ;
 
-var gemCount =0;
-		
-	$(".gem").click(function() {
-			this.value++;
-					$("#blankHere").html(gemCount * blueWorth);
-    
-    });
+    });//END OF START newGame
 
 
 
-var blueCount =0;
-		
-	$("#blueBtn").click(function() {
-			blueCount++;
-					$("#blankHere").html(blueCount * blueWorth);
-    
-    });
-    
+		 	$("#blueBtn").click(function() {
+					blueCount++;
+				combinedWorth = (blueCount * blueWorth)   ;
+				console.log(combinedWorth);
+				$("#blankHere").html(blueWorth) ;
 
-//var whiteCount =0;
-
-//		$("#whiteBtn").click(function() {
-//			whiteCount++;
-//			$("#blankHere").html(whiteCount * whiteWorth);
+ 	});//END OF BLUE CLICK
 
 
-          
 
-  //  });
-
+ 			$("#whiteBtn").click(function() {
+					whiteCount++;
+				$("#blankHere").html(whiteCount * whiteWorth);
+ 	});	       		
 
 		
-        
+
+		     $("#purpleBtn").click(function() {
+							purpleCount++;
+				$("#blankHere").html(purpleCount * purpleWorth)+ combinedWorth ;
+	});
+
+
+
+			$("#pinkBtn").click(function() {
+							pinkCount++;
+				$("#blankHere").html(pinkCount * pinkWorth)+ combinedWorth ;
+
+ 	});   
+
 
 });
 
 
-});
+
 
  
 

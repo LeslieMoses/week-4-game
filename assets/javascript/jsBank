@@ -20,3 +20,120 @@ function startGame() {
 		whiteWorth = Math.floor(Math.random() * 6) + 1; 
 		purpleWorth = Math.floor(Math.random() * 6) + 1; 
 		pinkWorth = Math.floor(Math.random() * 6) + 1; 
+
+
+
+		blueValue = Math.floor(Math.random() * 12) + 1; 
+		whiteValue = Math.floor(Math.random() * 12) + 1; 
+		purpleValue = Math.floor(Math.random() * 12) + 1; 
+		pinkValue = Math.floor(Math.random() * 12) + 1; 
+
+
+
+$(".blueBtn" ).on("click", function(clk,bw) {
+   		(clk*bw)=blueValue;
+
+
+
+var blueCount =0;
+
+$("#blueBtn").click(function() {
+blueCount++
+$("#yourTotal").html("My current count is: "blueCount);
+
+
+
+
+var one = parseInt($(".itemOne").text(), 10);
+var two = parseInt($(".itemTwo").text(), 10);
+$(".total").text(one * two);
+
+
+
+blueWorth = Math.floor(Math.random() * 12) + 1; 
+		whiteWorth = Math.floor(Math.random() * 12) + 1; 
+		purpleWorth = Math.floor(Math.random() * 12) + 1; 
+		pinkWorth = Math.floor(Math.random() * 12) + 1; 
+
+
+   });
+
+   	function("click", blueworth);
+
+
+    
+     	$("#blueBtn").click(function(){
+     	//	if (combinedWorth = 0)
+     		$("#blankHere").text( blueWorth + combinedWorth ); 
+
+     });
+
+		$("#blueBtn").click(function(){
+			$("#blankHere").text( blueWorth + combinedWorth); 
+
+          });
+
+
+          $("#whiteBtn").click(function(){
+         $("#blankHere").text( whiteWorth + combinedWorth); 
+
+          });
+
+         $("#purpleBtn").click(function(){
+         $("#blankHere").text( purpleWorth + combinedWorth); 
+
+          });
+
+         $("#pinkBtn").click(function(){
+         $("#blankHere").text( pinkWorth + combinedWorth); 
+
+
+var gemCount =0;
+	$(".gem").click(function() {
+			this.value++;
+					$("#blankHere").html(gemCount * blueValue);
+    
+    });
+
+--------------------------------------------------------------------------
+
+    $("#blueBtn").click(function() {
+					blueCount++;
+		   $("#blankHere").html(blueCount * blueWorth) ;
+
+
+	});	       
+
+ 			$("#whiteBtn").click(function() {
+					whiteCount++;
+					$("#blankHere").html(whiteCount * whiteWorth);
+		    
+		    
+ });
+ 		
+		if(blueCount++){ $("#blankHere").html(blueWorth + combinedWorth); }
+
+		   else if (whiteCount++){ $("#blankHere").html(whiteWorth + combinedWorth); }
+		   else if (purpleCount++){ purpleWorth + combinedWorth; }
+		   else if (pinkCount++){ pinkWorth + combinedWorth; }
+
+		   --------------------------
+		   ADD FUNCTION AROUND CLICKS OF GEMS?
+
+		       if(".gem")on.("click", function(){
+---------------------------------
+
+			AS A FUNCTION AROUND BLUE CLICKING
+
+ 	$("#blueBtn").click(function() {
+					blueCount++;
+					function blueFunction(x,y){
+						(x * y);    
+					
+		   $("#blankHere").html(blueWorth + combinedWorth) ;}
+
+ 
+	});
+		 	blueFunction(blueCount, blueWorth);
+
+		 	---------------------------------
