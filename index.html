@@ -13,7 +13,7 @@
     <script src="assets/javascript/game.js"></script>
 
    <!--Goog FONT -->
-<link href="https://fonts.googleapis.com/css?family=Barrio|Open+Sans|Share+Tech+Mono" rel="stylesheet">
+<link href="https://fonts.googleapis.com/css?family=Barrio|Open+Sans|Share+Tech+Mono" rel="stylesheet"><link href="https://fonts.googleapis.com/css?family=Armata" rel="stylesheet">
 </head>
 <body>
 
@@ -26,8 +26,8 @@ background: white;
 
 #mono {
 	font-size: 26px;
-	font-family: 'Share Tech Mono', monospace;
-	letter-spacing: .1em;
+	font-family: 'Armata', sans-serif;
+ 
 }
 
 body { 
@@ -60,6 +60,13 @@ background: url(assets/images/lined_paper_@2X.png);
 	color: white;
 }
 
+.numbum{
+	font-family: 'Share Tech Mono', monospace;
+	font-size: 40px;
+	color: black;
+
+}
+
 </style>
 
 	<div class="container">
@@ -74,7 +81,8 @@ background: url(assets/images/lined_paper_@2X.png);
  <div class="container">
 
 <div class="row">
-	<div id="winsL" class="col-sm-6 well col-lg-7" style="margin-top: 20px"><h4><strong>WINS:</strong>  here  &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<strong> LOSSES:</strong> here </h4></div>
+	<div   class="col-sm-6   col-lg-5"> <p><a id="pressNew" class="btn  btn-lg pull-right"   href="#" role="button" >New game</a>  </p></div>
+	<div id="winsL" class="col-sm-6 well col-lg-2" style="margin-top: 20px"><h4><strong>WINS:</strong><h4 id="win">  here  </h4></h4><strong> LOSSES:</strong><h4 id="lose"> here </h4></h4></div>
 
 							      <img src="assets/images/inspector.jpg" class="pull-right" style="margin-top: 20px; height: 700px" alt="...">
 
@@ -88,19 +96,19 @@ background: url(assets/images/lined_paper_@2X.png);
 
 
 		<div class="well col-sm-6 col-lg-7 " >
-		 <p id="mono"> Current crystal collection worth:: </p> 
-		 <h1 class="pull-right" id="millions">$ million</h1>
+		 <p id="mono"> Current collection worth:: </p> 
+		 <h1 class="pull-right numbum" id="millions">$ million</h1>
 		  <br>
 		<br>
 		<br>
 		<br>
 		<br>
- 		  <h2 class="pull-left" id="yourTotal">Your total: &nbsp; <h2 id="blankHere">____ </h2></h2>
+ 		  <h2 class="pull-left numbum" id="yourTotal">Your total: &nbsp; <h2 class="numbum" id="blankHere">____ </h2></h2>
 		<div class="col-sm-6 col-lg-12" style="padding:10px">
 		
 		
 		<hr class="pull-center col-sm-12 col-lg-12">
-		<p id="mono"> <strong>Click to collect:: </strong> Add crystals' points, match total above + WIN</p></div>
+		<p id="mono">  <strong>Click</strong> crystals to match the millions:: </p></div>
 		<div class="row">
 				<div class="panelBody col-lg-12 pull-center" style="padding:10px; background-color: black">
 		          <ul class="list-inline " style="margin:0,auto">
@@ -116,7 +124,7 @@ background: url(assets/images/lined_paper_@2X.png);
 		 </div></div>
  						
 		<br>
-		<p><a id="pressNew" class="btn  btn-lg pull-right"   href="#" role="button" >New game</a>  </p>
+		
 
 		<div class="row col-lg-12 pull-right">		
 

@@ -53,7 +53,8 @@ $(document).ready(function(){
 
 	$("#blankHere").html(combinedWorth) ;
 
-    });//END OF START newGame
+    });//END OF START  
+
 		//BLUE start
 		//function totalWorth(){
 		 	$("#blueBtn").click(function() {
@@ -68,7 +69,8 @@ $(document).ready(function(){
 
 			//	function combineF (bl, wh, pu, pi) {
 			//		return combinedWorth
-			//  +whiteWorth +pinkWorth +purpleWorth 	
+			//  +whiteWorth +pinkWorth +purpleWorth 
+	 
 
  });	//END OF BLUE 
 		//WHITE start
@@ -80,7 +82,7 @@ $(document).ready(function(){
 				combinedWorth = (blueCount * blueWorth) + (whiteCount * whiteWorth) + (purpleCount * purpleWorth) + (pinkCount * pinkWorth);
 					console.log(combinedWorth);
 				$("#blankHere").html(combinedWorth) ;
- 		       		
+ 	       		
 	});//END OF white 
 
 
@@ -90,6 +92,8 @@ $(document).ready(function(){
 				purpleCount++;
 			combinedWorth = (blueCount * blueWorth) + (whiteCount * whiteWorth) + (purpleCount * purpleWorth) + (pinkCount * pinkWorth);
 			$("#blankHere").html(combinedWorth) ;
+	
+ 
 	});//END OF purple CLICK
 
 
@@ -98,11 +102,24 @@ $(document).ready(function(){
 						console.log(pinkWorth);
 				pinkCount++;
 			combinedWorth = (blueCount * blueWorth) + (whiteCount * whiteWorth) + (purpleCount * purpleWorth) + (pinkCount * pinkWorth);
+			console.log(million);
 			$("#blankHere").html(combinedWorth)  ;
 
- 	}); //END OF pink CLICK  
+ 			}); //END OF pink CLICK  
 
-
+      $(".gem").on("click", function(){
+	if (combinedWorth == million && combinedWorth > 0 ) { 
+      		winCounter++;
+      		$("#win").html(winCounter);
+			alert("Winner! Pick a jewel below.");
+			
+		} else if (combinedWorth > million){
+			lossCounter++;
+			$("#lose").html(lossCounter);
+			alert("Game over!");
+		}	
+	
+})
 
 });
 
