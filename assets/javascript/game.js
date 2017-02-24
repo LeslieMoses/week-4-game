@@ -31,14 +31,19 @@ $(document).ready(function(){
 //game start
     $("#pressNew").click(function(){
     		
-	var newGame = 0;
-		
-    	million = Math.floor(Math.random() * 120) + 19; 
+	  	million = Math.floor(Math.random() * 120) + 19; 
         
         $("#millions").text("$" + million +" million");
-	 	$("#blankHere").empty();
+	 console.log(combinedWorth);
 	 	blueWorth = 0;
-	    whiteWorth = 0;   	
+	    whiteWorth = 0;   
+	    pinkWorth = 0;
+	    purpleWorth = 0;	
+	    combinedWorth = 0;  
+	    blueCount = 0;
+	    whiteCount = 0;   
+	    pinkCount = 0;
+	    purpleCount = 0;	
 	    combinedWorth = 0;  
 
 	 	blueWorth = Math.floor(Math.random() * 6) + 1;  
@@ -50,36 +55,53 @@ $(document).ready(function(){
 
     });//END OF START newGame
 		//BLUE start
-		 	
+		//function totalWorth(){
 		 	$("#blueBtn").click(function() {
-					blueCount++;
+
+				blueCount++;
+					console.log(blueCount);
 					console.log(blueWorth);
-				combinedWorth = (blueCount * blueWorth)   ;
+					console.log(combinedWorth);
+				combinedWorth = (blueCount * blueWorth) + (whiteCount * whiteWorth) + (purpleCount * purpleWorth) + (pinkCount * pinkWorth);
 				console.log(combinedWorth);
 				$("#blankHere").html(combinedWorth) ;
 
- 	});//END OF BLUE 
+			//	function combineF (bl, wh, pu, pi) {
+			//		return combinedWorth
+			//  +whiteWorth +pinkWorth +purpleWorth 	
+
+ });	//END OF BLUE 
 		//WHITE start
- 			$("#whiteBtn").click(function() {
-					whiteCount++;
+ 		$("#whiteBtn").click(function() {
+
+				whiteCount++;
+					console.log(whiteCount);
 					console.log(whiteWorth);
-				combinedWorth = (whiteCount * whiteWorth)   ;
-				console.log(combinedWorth);
+				combinedWorth = (blueCount * blueWorth) + (whiteCount * whiteWorth) + (purpleCount * purpleWorth) + (pinkCount * pinkWorth);
+					console.log(combinedWorth);
 				$("#blankHere").html(combinedWorth) ;
  		       		
 	});//END OF white 
+
+
 		//PURPLE start
 		     $("#purpleBtn").click(function() {
-							purpleCount++;
-				$("#blankHere").html(purpleCount * purpleWorth)+ combinedWorth ;
+					console.log(purpleWorth);
+				purpleCount++;
+			combinedWorth = (blueCount * blueWorth) + (whiteCount * whiteWorth) + (purpleCount * purpleWorth) + (pinkCount * pinkWorth);
+			$("#blankHere").html(combinedWorth) ;
 	});//END OF purple CLICK
-		//PINK start
 
+
+		//PINK start
 			$("#pinkBtn").click(function() {
-							pinkCount++;
-				$("#blankHere").html(pinkCount * pinkWorth)+ combinedWorth ;
+						console.log(pinkWorth);
+				pinkCount++;
+			combinedWorth = (blueCount * blueWorth) + (whiteCount * whiteWorth) + (purpleCount * purpleWorth) + (pinkCount * pinkWorth);
+			$("#blankHere").html(combinedWorth)  ;
 
  	}); //END OF pink CLICK  
+
 
 
 });
